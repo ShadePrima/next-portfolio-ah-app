@@ -1,7 +1,6 @@
 //color
-$red-color: #ff6565;
+
 $white-color: #ffffff;
-$black-color: #071629;
 
 //background
 $background: #f5f4f4;
@@ -12,7 +11,12 @@ $background: #f5f4f4;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 @mixin flexBetween() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }

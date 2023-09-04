@@ -1,0 +1,43 @@
+@import '../../../styles/variable.module.scss';
+
+.main {
+  min-height: 104px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.content {
+  padding-top: 44px;
+  padding-bottom: 44px;
+
+  @include flexBetween;
+
+  @media (max-width: 768px) {
+    @include flexCenter;
+    gap: 32px;
+  }
+}
+
+.logo {
+  color: $white-color;
+
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+.nav {
+  width: 401px;
+  min-height: 16px;
+
+  @include flexBetween;
+}
+
+.navItem {
+  color: $white-color;
+  text-align: center;
+
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 100%;
+}
