@@ -1,0 +1,21 @@
+@import '../../styles/variable.module.scss';
+
+.main {
+  @include flexCenter;
+}
+
+.buttonWhite {
+  margin-top: 48px;
+  padding: 16px 32px;
+
+  background-color: $white-color;
+  border-radius: 64px;
+
+  color: #0e0c15;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  text-transform: uppercase;
+}

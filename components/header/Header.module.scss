@@ -1,0 +1,44 @@
+@import '../../styles/variable.module.scss';
+
+.main {
+}
+
+.content {
+  margin-top: 38px;
+
+  @include flexBetween;
+
+  @media (max-width: 1049px) {
+    @include flexCenter;
+    gap: 32px;
+  }
+}
+
+.leftBlock {
+  max-width: 510px;
+  min-height: 316px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.title {
+  color: $white-color;
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 100%;
+  letter-spacing: 1px;
+}
+
+.text {
+  margin-top: 20px;
+
+  color: rgba(255, 255, 255, 0.8);
+
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.1px;
+}
