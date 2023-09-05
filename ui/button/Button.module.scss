@@ -5,7 +5,6 @@
 }
 
 .buttonWhite {
-  margin-top: 48px;
   padding: 16px 32px;
 
   background-color: $white-color;
@@ -17,5 +16,24 @@
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.1px;
+  text-transform: uppercase;
+}
+
+.buttonExpert {
+  min-height: 56px;
+  @include flexCenter;
+
+  padding: 17px 82px 20px 82px;
+  align-self: stretch;
+
+  border-radius: 64px;
+  border: 1px solid $blue-color;
+
+  color: $white-color;
+  text-align: center;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
   text-transform: uppercase;
 }

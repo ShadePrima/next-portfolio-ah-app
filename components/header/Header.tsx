@@ -1,10 +1,10 @@
 import cl from 'clsx'
+import Image from 'next/image'
 
 import Navbar from './navbar/Navbar'
+import { Button } from '@/ui'
 
 import styles from './Header.module.scss'
-import Image from 'next/image'
-import { Button } from '@/ui'
 
 const Header = () => {
   return (
@@ -18,7 +18,9 @@ const Header = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis vel
             sit nisi, feugiat sociis.
           </p>
-          <Button title='Get in Touch' variant='white' />
+          <div className={styles.button}>
+            <Button title='Get in Touch' variant='white' />
+          </div>
         </div>
         <Image
           src='/images/header-img.png'

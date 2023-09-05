@@ -1,4 +1,15 @@
+import cl from 'clsx'
+
+import { Inter } from 'next/font/google'
+const inter = Inter({ subsets: ['latin'] })
+
 import styles from './Button.module.scss'
+
+/**
+ * @param  title
+ * @requires variant white
+ *
+ */
 
 type ButtonProps = {
   title: string
@@ -7,7 +18,14 @@ type ButtonProps = {
 
 const Button = ({ title, variant }: ButtonProps) => {
   return (
-    <div className={(styles.main, (variant = 'white' && styles.buttonWhite))}>
+    <div
+      className={cl(
+        styles.main,
+        variant === 'white' && styles.buttonWhite,
+        variant === 'expert' && styles.buttonExpert,
+        variant === 'expert' && inter.className
+      )}
+    >
       {title}
     </div>
   )
