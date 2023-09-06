@@ -6,25 +6,21 @@ import ProcessCard from './processCard/ProcessCard'
 const cardList = [
   {
     id: 1,
-    icon: 1,
     title: 'Hello',
     text: 'Lorem ipsum dolor sit amet, consect-etur adipiscing elit. Turpis vel sit nisi, feugiat sociis. ',
   },
   {
     id: 2,
-    icon: 1,
     title: 'Discovery',
     text: 'Lorem ipsum dolor sit amet, consect-etur adipiscing elit. Turpis vel sit nisi, feugiat sociis. ',
   },
   {
     id: 3,
-    icon: 1,
     title: 'Work',
     text: 'Lorem ipsum dolor sit amet, consect-etur adipiscing elit. Turpis vel sit nisi, feugiat sociis. ',
   },
   {
     id: 4,
-    icon: 1,
     title: 'Delivery',
     text: 'Lorem ipsum dolor sit amet, consect-etur adipiscing elit. Turpis vel sit nisi, feugiat sociis. ',
   },
@@ -36,7 +32,12 @@ const Process = () => {
       <div className={cl(styles.content, 'container')}>
         <div className={styles.cardBlock}>
           {cardList.map((card) => (
-            <ProcessCard key={card.id} />
+            <ProcessCard
+              key={card.id}
+              icon={card.id}
+              title={card.title}
+              text={card.text}
+            />
           ))}
         </div>
 

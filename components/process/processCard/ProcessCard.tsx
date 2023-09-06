@@ -1,15 +1,19 @@
 import Image from 'next/image'
 import styles from './ProcessCard.module.scss'
 
-const ProcessCard = () => {
+type ProcessCardProps = {
+  icon: number
+  title: string
+  text: string
+}
+
+const ProcessCard = ({ icon, title, text }: ProcessCardProps) => {
+  console.log(icon, 'id')
   return (
     <div className={styles.main}>
-      <div className={styles.icon}>1</div>
-      <h3 className={styles.title}>Hello</h3>
-      <p className={styles.text}>
-        Lorem ipsum dolor sit amet, consect-etur adipiscing elit. Turpis vel sit
-        nisi, feugiat sociis.
-      </p>
+      <div className={styles.icon}>{icon}</div>
+      <h3 className={styles.title}>{title}</h3>
+      <p className={styles.text}>{text}</p>
     </div>
   )
 }
