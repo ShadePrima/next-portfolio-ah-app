@@ -25,7 +25,7 @@ const ExpertCard = ({ title, text }: ExpertCardProps) => {
           malesuada ipsum enim.
         </p>
       </div>
-      <Button title='Learn more' variant='expert' />
+      <Button title='Learn more' variant='dark' />
     </div>
   )
 }

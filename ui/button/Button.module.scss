@@ -25,7 +25,7 @@
   text-transform: uppercase;
 }
 
-.buttonExpert {
+.buttonDark {
   min-height: 56px;
   @include flexCenter;
 
@@ -39,6 +39,32 @@
   text-align: center;
 
   font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.processButton {
+  @include flexCenter;
+
+  padding: 16px 32px;
+  border-radius: 64px;
+  background: $blue-color;
+}
+
+.buttonBlue {
+  padding: 16px 32px;
+  @include flexCenter;
+
+  border-radius: 64px;
+  background: $blue-color;
+
+  color: $white-color;
+  text-align: center;
+  font-feature-settings: 'liga' off;
+
+  font-size: 16px;
+  font-style: normal;
   font-weight: 500;
   line-height: normal;
   text-transform: uppercase;

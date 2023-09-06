@@ -5,16 +5,16 @@ const inter = Inter({ subsets: ['latin'] })
 
 import styles from './Button.module.scss'
 
-/**
- * @param  title
- * @requires variant white
- *
- */
-
 type ButtonProps = {
   title: string
   variant: string
 }
+
+/**
+ * @requires title string
+ * @requires variant - white | expert | process |
+ *
+ */
 
 const Button = ({ title, variant }: ButtonProps) => {
   return (
@@ -22,8 +22,10 @@ const Button = ({ title, variant }: ButtonProps) => {
       className={cl(
         styles.main,
         variant === 'white' && styles.buttonWhite,
-        variant === 'expert' && styles.buttonExpert,
-        variant === 'expert' && inter.className
+        variant === 'dark' && styles.buttonDark,
+        variant === 'dark' && inter.className,
+        variant === 'blue' && styles.buttonBlue,
+        variant === 'blue' && inter.className
       )}
     >
       {title}

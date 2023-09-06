@@ -26,4 +26,10 @@
 .cardContainer {
   margin-top: 48px;
   @include flexBetween;
+  gap: 12px;
+
+  @media (max-width: 695px) {
+    gap: 24px;
+    @include flexCenter;
+  }
 }
