@@ -1,0 +1,54 @@
+@import '../../styles/variable.module.scss';
+
+.main {
+  margin-top: 103px;
+}
+
+.content {
+  @include flexBetween;
+
+  @media (max-width: 906px) {
+    @include flexCenter;
+  }
+}
+
+.leftBlock {
+  max-width: 422px;
+  min-height: 100px;
+}
+
+.rightBlock {
+  @include flexBetween;
+  align-items: end;
+
+  @media (max-width: 484px) {
+    @include flexCenter;
+    flex-direction: column-reverse;
+  }
+}
+
+.buttonContainer {
+  width: 156px;
+
+  padding-bottom: 32px;
+
+  @include flexCenter;
+  gap: 16px;
+
+  .buttonTitle {
+    color: $white-color;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .button {
+    width: 156px;
+  }
+}
+
+.imageContainer {
+  position: relative;
+  left: -32px;
+}

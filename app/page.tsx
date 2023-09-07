@@ -1,4 +1,4 @@
-import { Expertise, Header, Process } from '@/components'
+import { Expertise, Header, Process, Projects } from '@/components'
 import styles from './page.module.scss'
 
 export default function Home() {
@@ -7,6 +7,7 @@ export default function Home() {
       <Header />
       <Expertise />
       <Process />
+      <Projects />
     </main>
   )
 }
