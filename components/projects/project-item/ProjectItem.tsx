@@ -9,33 +9,36 @@ const ProjectItem = ({ variant }: ProjectItemProps) => {
   return (
     <div className={styles.main}>
       {variant === 'vertical' && (
-        <Image
-          src='/images/project-vertical.png'
-          className={styles.image}
-          width={335}
-          height={536}
-          alt='project-image'
-        />
+        // <Image
+        //   src='/images/project-vertical.png'
+        //   className={styles.image}
+        //   width={335}
+        //   height={536}
+        //   alt='project-image'
+        // />
+        <div className={styles.verticalImage} />
       )}
 
       {variant === 'horizontal' && (
-        <Image
-          src='/images/project-horizontal.png'
-          className={styles.image}
-          width={689}
-          height={206}
-          alt='project-image'
-        />
+        // <Image
+        //   src='/images/project-horizontal.png'
+        //   className={styles.image}
+        //   width={689}
+        //   height={206}
+        //   alt='project-image'
+        // />
+        <div className={styles.horizontalImage} />
       )}
 
       {variant === 'normal' && (
-        <Image
-          src='/images/project-normal.png'
-          className={styles.image}
-          width={335}
-          height={206}
-          alt='project-image'
-        />
+        // <Image
+        //   src='/images/project-normal.png'
+        //   className={styles.image}
+        //   width={335}
+        //   height={206}
+        //   alt='project-image'
+        // />
+        <div className={styles.normalImage} />
       )}
 
       <div className={styles.content}>

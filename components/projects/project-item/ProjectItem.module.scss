@@ -10,6 +10,10 @@
   border: 1px solid rgba(255, 255, 255, 0.15);
   background: rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(32px);
+
+  //   @media (max-width: 1068px) {
+  //     display: none;
+  //   }
 }
 
 .content {
@@ -24,6 +28,56 @@
 
 .image {
   border-radius: 8px 8px 0 0;
+}
+
+.verticalImage {
+  width: 336px;
+  height: 538px;
+
+  border-radius: 8px 8px 0 0;
+
+  background-image: url('/images/project-vertical.png');
+
+  @media (max-width: 1068px) {
+    width: 687px;
+    height: 206px;
+    background-image: url('/images/project-horizontal.png');
+  }
+
+  @media (max-width: 767px) {
+    width: 333px;
+    height: 206px;
+
+    background-image: url('/images/project-normal.png');
+  }
+}
+
+.horizontalImage {
+  width: 682px;
+  height: 206px;
+
+  border-radius: 8px 8px 0 0;
+  background-image: url('/images/project-horizontal.png');
+
+  @media (max-width: 1068px) {
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media (max-width: 767px) {
+    width: 333px;
+    height: 206px;
+
+    background-image: url('/images/project-normal.png');
+  }
+}
+
+.normalImage {
+  width: 333px;
+  height: 206px;
+
+  border-radius: 8px 8px 0 0;
+  background-image: url('/images/project-normal.png');
 }
 
 .title {
