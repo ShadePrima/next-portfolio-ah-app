@@ -8,6 +8,7 @@ import styles from './Button.module.scss'
 type ButtonProps = {
   title: string
   variant: string
+  type?: 'button' | 'submit' | 'reset' | undefined
 }
 
 /**
@@ -16,9 +17,10 @@ type ButtonProps = {
  *
  */
 
-const Button = ({ title, variant }: ButtonProps) => {
+const Button = ({ title, variant, type }: ButtonProps) => {
   return (
-    <div
+    <button
+      type={type}
       className={cl(
         styles.main,
         variant === 'white' && styles.buttonWhite,
@@ -29,7 +31,7 @@ const Button = ({ title, variant }: ButtonProps) => {
       )}
     >
       {title}
-    </div>
+    </button>
   )
 }
 

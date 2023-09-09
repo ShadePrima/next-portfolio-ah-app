@@ -7,6 +7,15 @@
   margin: 0 auto;
 }
 
+.title-large {
+  color: $white-color;
+  text-align: center;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
 .title-middle {
   color: $white-color;
   font-size: 48px;
@@ -39,6 +48,17 @@
   margin-top: 20px;
 }
 
+.mt-48 {
+  margin-top: 48px;
+}
+
 .text-center {
   text-align: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }

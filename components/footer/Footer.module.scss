@@ -1,0 +1,21 @@
+@import '../../styles/variable.module.scss';
+
+.main {
+  margin-top: 104px;
+  min-height: 104px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.title {
+  height: 104px;
+
+  @include flexCenter;
+
+  color: rgba(255, 255, 255, 0.2);
+  font-feature-settings: 'liga' off;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+}
