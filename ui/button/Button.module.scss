@@ -69,3 +69,26 @@
   line-height: normal;
   text-transform: uppercase;
 }
+
+.buttonBlueDark {
+  padding: 16.5px 72px;
+
+  @include flexCenter;
+
+  border-radius: 64px;
+  background: linear-gradient(
+    80deg,
+    #3d1dff -5.76%,
+    #ea4697 60.73%,
+    #ffc98b 104.17%
+  );
+
+  color: $white-color;
+  text-align: center;
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+  text-transform: capitalize;
+}

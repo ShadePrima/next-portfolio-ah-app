@@ -1,7 +1,8 @@
 import cl from 'clsx'
 
-import { Inter } from 'next/font/google'
+import { Inter, Work_Sans } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
+const work_sans = Work_Sans({ subsets: ['latin'] })
 
 import styles from './Button.module.scss'
 
@@ -27,7 +28,9 @@ const Button = ({ title, variant, type }: ButtonProps) => {
         variant === 'dark' && styles.buttonDark,
         variant === 'dark' && inter.className,
         variant === 'blue' && styles.buttonBlue,
-        variant === 'blue' && inter.className
+        variant === 'blue' && inter.className,
+        variant === 'blue-dark' && styles.buttonBlueDark,
+        variant === 'blue-dark' && work_sans.className
       )}
     >
       {title}

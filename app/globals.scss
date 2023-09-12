@@ -15,11 +15,11 @@
 
 .title-large {
   color: $white-color;
-  text-align: center;
-  font-size: 72px;
+
+  font-size: 80px;
   font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  font-weight: 900;
+  line-height: 100%;
 }
 
 .title-middle {
@@ -30,6 +30,15 @@
   line-height: 48px;
 }
 
+.text-middle {
+  color: rgba(255, 255, 255, 0.8);
+  font-feature-settings: 'liga' off;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+}
+
 .title-small {
   color: $white-color;
   font-size: 16px;
@@ -38,20 +47,16 @@
   line-height: 100%;
 }
 
-.text-middle {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 125%;
-}
-
 .mt-8 {
   margin-top: 8px;
 }
 
 .mt-20 {
   margin-top: 20px;
+}
+
+.mt-24 {
+  margin-top: 24px;
 }
 
 .mt-48 {
