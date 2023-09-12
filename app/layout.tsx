@@ -1,9 +1,9 @@
 import './globals.scss'
 import type { Metadata } from 'next'
-import { Inter, Nunito_Sans } from 'next/font/google'
+import { Inter, Darker_Grotesque, Manrope, Work_Sans } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
-const nunitoSans = Nunito_Sans({ subsets: ['latin'] })
+const darkerGrotesque = Darker_Grotesque({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Portfolio App',
@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={nunitoSans.className}>{children}</body>
+      <body className={darkerGrotesque.className}>{children}</body>
     </html>
   )
 }

@@ -3,6 +3,7 @@
 import React from 'react'
 import styles from './ContactForm.module.scss'
 import { Button, Input } from '@/ui'
+import Image from 'next/image'
 
 type formProps = {
   name: string
@@ -16,6 +17,8 @@ const ContactForm = () => {
     email: '',
     message: '',
   })
+
+  console.log(form, 'form')
 
   const handleInput = (event: any) => {
     const { target } = event
@@ -48,12 +51,14 @@ const ContactForm = () => {
       <form onSubmit={(event) => console.log(event)}>
         <div className={styles.inputBlock}>
           <Input
+            icon='/icons/mail.svg'
             type='text'
             placeholder='Your name'
             value={form.name}
             onChange={handleInput}
           />
           <Input
+            icon='/icons/mail.svg'
             type='email'
             placeholder='Your email'
             value={form.email}

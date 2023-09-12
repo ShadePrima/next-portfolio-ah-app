@@ -7,8 +7,8 @@
 }
 
 .content {
-  padding-top: 44px;
-  padding-bottom: 44px;
+  padding-top: 42px;
+  padding-bottom: 42px;
 
   @include flexBetween;
 
@@ -19,25 +19,36 @@
 }
 
 .logo {
-  color: $white-color;
-
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 100%;
-}
-
-.nav {
-  width: 401px;
-  min-height: 16px;
-
   @include flexBetween;
-}
+  gap: 12px;
 
-.navItem {
   color: $white-color;
-  text-align: center;
 
   font-size: 16px;
   font-weight: 600;
   line-height: 100%;
+}
+
+.logoTextContainer {
+  @include flexBetween;
+  gap: 5px;
+
+  color: $white-color;
+  font-feature-settings: 'liga' off;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 100%; /* 20px */
+
+  .logoTextFirst {
+    font-weight: 800;
+  }
+
+  .logoDivider {
+    font-weight: 200;
+  }
+
+  .logoTextSecond {
+    font-weight: 400;
+  }
 }

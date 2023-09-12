@@ -1,0 +1,31 @@
+@import '../../../../styles/variable.module.scss';
+
+.main {
+}
+
+.nav {
+  width: 401px;
+  min-height: 16px;
+
+  @include flexBetween;
+}
+
+.navItem {
+  color: $white-color;
+  text-align: center;
+
+  color: rgba(255, 255, 255, 0.6);
+  font-feature-settings: 'liga' off;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+
+  cursor: pointer;
+}
+
+.active {
+  color: $white-color;
+  font-weight: 700;
+}

@@ -12,11 +12,11 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <Header />
-      <Expertise />
-      <Process />
-      <Projects />
-      <Talk />
-      <Footer />
+      {/* <Expertise /> */}
+      {/* <Process /> */}
+      {/* <Projects /> */}
+      {/* <Talk /> */}
+      {/* <Footer /> */}
     </main>
   )
 }

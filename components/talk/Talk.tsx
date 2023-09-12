@@ -12,7 +12,7 @@ const Talk = () => {
       <h1 className={cl(inter.className, 'title-large text-center')}>
         Let’s talk
       </h1>
-      <div className={cl(styles.content, 'container flex-center mt-48')}>
+      <div className={cl(styles.content, 'container-small flex-center mt-48')}>
         <div className={styles.leftBlock}>
           <p className='title-small'>Contact us</p>
           <h2 className='title-middle'>Write to us</h2>
