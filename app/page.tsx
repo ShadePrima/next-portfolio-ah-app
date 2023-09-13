@@ -13,7 +13,7 @@ export default function Home() {
     <main className={styles.main}>
       <Header />
       <Expertise />
-      {/* <Process /> */}
+      <Process />
       {/* <Projects /> */}
       {/* <Talk /> */}
       {/* <Footer /> */}

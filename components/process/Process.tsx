@@ -3,29 +3,6 @@ import { Button } from '@/ui'
 import styles from './Process.module.scss'
 import ProcessCard from './processCard/ProcessCard'
 
-const cardList = [
-  {
-    id: 1,
-    title: 'Hello',
-    text: 'Lorem ipsum dolor sit amet, consect-etur adipiscing elit. Turpis vel sit nisi, feugiat sociis. ',
-  },
-  {
-    id: 2,
-    title: 'Discovery',
-    text: 'Lorem ipsum dolor sit amet, consect-etur adipiscing elit. Turpis vel sit nisi, feugiat sociis. ',
-  },
-  {
-    id: 3,
-    title: 'Work',
-    text: 'Lorem ipsum dolor sit amet, consect-etur adipiscing elit. Turpis vel sit nisi, feugiat sociis. ',
-  },
-  {
-    id: 4,
-    title: 'Delivery',
-    text: 'Lorem ipsum dolor sit amet, consect-etur adipiscing elit. Turpis vel sit nisi, feugiat sociis. ',
-  },
-]
-
 const Process = () => {
   return (
     <div className={styles.main}>
@@ -61,3 +38,26 @@ const Process = () => {
 }
 
 export default Process
+
+const cardList = [
+  {
+    id: 1,
+    title: 'Hello',
+    text: 'Lorem ipsum dolor sit amet, consect-etur adipiscing elit. Turpis vel sit nisi, feugiat sociis. ',
+  },
+  {
+    id: 2,
+    title: 'Discovery',
+    text: 'Lorem ipsum dolor sit amet, consect-etur adipiscing elit. Turpis vel sit nisi, feugiat sociis. ',
+  },
+  {
+    id: 3,
+    title: 'Work',
+    text: 'Lorem ipsum dolor sit amet, consect-etur adipiscing elit. Turpis vel sit nisi, feugiat sociis. ',
+  },
+  {
+    id: 4,
+    title: 'Delivery',
+    text: 'Lorem ipsum dolor sit amet, consect-etur adipiscing elit. Turpis vel sit nisi, feugiat sociis. ',
+  },
+]

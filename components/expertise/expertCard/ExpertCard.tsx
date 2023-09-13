@@ -45,11 +45,10 @@ const ExpertCard = ({ id, title, text }: ExpertCardProps) => {
           alt='expert-icon'
         />
 
-        <h3 className={cl(styles.title, darker_grotesque.className)}>Design</h3>
-        <p className={cl(styles.text, work_sans.className)}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec enim
-          vel ac donec et tincidunt in et.
-        </p>
+        <h3 className={cl(styles.title, darker_grotesque.className)}>
+          {title}
+        </h3>
+        <p className={cl(styles.text, work_sans.className)}>{text}</p>
       </div>
       <div onClick={handleButtonClick}>
         <Button

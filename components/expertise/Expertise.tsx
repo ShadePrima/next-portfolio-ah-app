@@ -60,17 +60,17 @@ export default Expertise
 const cardList = [
   {
     id: 1,
-    title: 'Design',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec enim vel ac donec et tincidunt in et. Sed erat mattis lacus nunc. Enim nam malesuada ipsum enim.',
+    title: 'Backend',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec enim vel ac donec et tincidunt in et. ',
   },
   {
     id: 2,
     title: 'Design',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec enim vel ac donec et tincidunt in et. Sed erat mattis lacus nunc. Enim nam malesuada ipsum enim.',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec enim vel ac donec et tincidunt in et. ',
   },
   {
     id: 3,
-    title: 'Design',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec enim vel ac donec et tincidunt in et. Sed erat mattis lacus nunc. Enim nam malesuada ipsum enim.',
+    title: 'Frontend',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec enim vel ac donec et tincidunt in et. ',
   },
 ]
