@@ -10,7 +10,7 @@ const work_sans = Work_Sans({ subsets: ['latin'] })
 import styles from './Button.module.scss'
 
 type ButtonProps = {
-  id: number
+  id?: number
   title: string
   variant: string
   type?: 'button' | 'submit' | 'reset' | undefined

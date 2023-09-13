@@ -8,7 +8,6 @@ const darkerGrotesque = Darker_Grotesque({ subsets: ['latin'] })
 const workSans = Work_Sans({ subsets: ['latin'] })
 
 import styles from './Header.module.scss'
-import Image from 'next/image'
 
 const Header = () => {
   return (
