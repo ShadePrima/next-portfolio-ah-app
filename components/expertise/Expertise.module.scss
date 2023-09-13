@@ -1,30 +1,18 @@
 @import '../../styles/variable.module.scss';
 
 .main {
-  margin-top: 18px;
+  margin-top: 192px;
 }
 
-.titleSmall {
-  text-align: center;
+.titleContainer {
+  max-width: 474px;
+  min-height: 148px;
 
-  color: $white-color;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 100%;
-}
-
-.title {
-  margin-top: 8px;
-  text-align: center;
-
-  color: $white-color;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 100%;
+  margin: 0 auto;
 }
 
 .cardContainer {
-  margin-top: 48px;
+  margin-top: 56px;
   @include flexBetween;
   gap: 12px;
 

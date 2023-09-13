@@ -13,6 +13,23 @@
   margin: 0 auto;
 }
 
+.title-small {
+  color: $white-color;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+}
+
+.title-middle {
+  color: $white-color;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 56px */
+  text-transform: capitalize;
+}
+
 .title-large {
   color: $white-color;
 
@@ -22,14 +39,6 @@
   line-height: 100%;
 }
 
-.title-middle {
-  color: $white-color;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 48px;
-}
-
 .text-middle {
   color: rgba(255, 255, 255, 0.8);
   font-feature-settings: 'liga' off;
@@ -37,14 +46,6 @@
   font-style: normal;
   font-weight: 400;
   line-height: 125%;
-}
-
-.title-small {
-  color: $white-color;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 100%;
 }
 
 .mt-8 {

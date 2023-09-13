@@ -2,12 +2,12 @@
 
 .main {
   max-width: 333px;
-  min-height: 380px;
+  min-height: 411px;
 
   padding: 32px;
-  border-radius: 24px;
-  background: rgba(0, 0, 0, 0.15);
-  backdrop-filter: blur(32px);
+  border-radius: 20px;
+  background: #0e0922;
+  // backdrop-filter: blur(32px);
 
   display: flex;
   flex-direction: column;
@@ -16,33 +16,38 @@
   gap: 24px;
 }
 
+.icon {
+  width: 104px;
+  height: 104px;
+
+  fill: #06071b;
+}
+
 .content {
   max-width: 269px;
   min-height: 236px;
+
+  @include flexCenter;
+  flex-direction: column;
 }
 
 .title {
-  margin-top: 20px;
+  margin-top: 40px;
 
-  color: $blue-color;
-  font-size: 24px;
+  color: $white-color;
+  font-size: 32px;
   font-style: normal;
   font-weight: 700;
-  line-height: 100%;
+  line-height: 100%; /* 32px */
 }
 
 .text {
-  margin-top: 12px;
-  padding-right: 38px;
+  margin-top: 16px;
 
-  color: rgba(255, 255, 255, 0.8);
-  font-family: Inter;
-  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 125%;
-
-  align-self: stretch;
-
-  text-align: start;
+  line-height: 175%; /* 24.5px */
 }

@@ -1,31 +1,64 @@
+'use client'
+
+import React from 'react'
+import cl from 'clsx'
 import Image from 'next/image'
+
+import { Darker_Grotesque, Work_Sans } from 'next/font/google'
+const darker_grotesque = Darker_Grotesque({ subsets: ['latin'] })
+const work_sans = Work_Sans({ subsets: ['latin'] })
+
 import { Button } from '@/ui'
 
 import styles from './ExpertCard.module.scss'
 
 type ExpertCardProps = {
+  id: number
   title: string
   text: string
 }
 
-const ExpertCard = ({ title, text }: ExpertCardProps) => {
+const ExpertCard = ({ id, title, text }: ExpertCardProps) => {
+  const [selectedCard, setSelectedCard] = React.useState({
+    iconSrc: '/icons/expert-icon-disabled.svg',
+    buttonVariant: 'dark',
+  })
+
+  const handleButtonClick = () => {
+    setSelectedCard((prevState) => ({
+      ...prevState,
+      iconSrc:
+        prevState.buttonVariant === 'dark'
+          ? '/icons/expert-icon-enabled.svg'
+          : '/icons/expert-icon-disabled.svg',
+      buttonVariant: prevState.buttonVariant === 'dark' ? 'blue-light' : 'dark',
+    }))
+  }
+
   return (
     <div className={styles.main}>
       <div className={styles.content}>
         <Image
-          src='/icons/expert-icon.svg'
-          width={80}
-          height={80}
+          src={selectedCard.iconSrc}
+          width={104}
+          height={104}
           alt='expert-icon'
         />
-        <h3 className={styles.title}>Design</h3>
-        <p className={styles.text}>
+
+        <h3 className={cl(styles.title, darker_grotesque.className)}>Design</h3>
+        <p className={cl(styles.text, work_sans.className)}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec enim
-          vel ac donec et tincidunt in et. Sed erat mattis lacus nunc. Enim nam
-          malesuada ipsum enim.
+          vel ac donec et tincidunt in et.
         </p>
       </div>
-      <Button title='Learn more' variant='dark' />
+      <div onClick={handleButtonClick}>
+        <Button
+          id={id}
+          title='Learn more'
+          variant={selectedCard.buttonVariant}
+          type='button'
+        />
+      </div>
     </div>
   )
 }

@@ -1,4 +1,7 @@
+'use client'
+
 import cl from 'clsx'
+import React, { MouseEvent } from 'react'
 
 import { Inter, Work_Sans } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
@@ -7,6 +10,7 @@ const work_sans = Work_Sans({ subsets: ['latin'] })
 import styles from './Button.module.scss'
 
 type ButtonProps = {
+  id: number
   title: string
   variant: string
   type?: 'button' | 'submit' | 'reset' | undefined
@@ -18,19 +22,23 @@ type ButtonProps = {
  *
  */
 
-const Button = ({ title, variant, type }: ButtonProps) => {
+const Button = ({ id, title, variant, type }: ButtonProps) => {
+  console.log(id, 'button id')
   return (
     <button
       type={type}
+      value={id}
       className={cl(
         styles.main,
         variant === 'white' && styles.buttonWhite,
         variant === 'dark' && styles.buttonDark,
-        variant === 'dark' && inter.className,
+        variant === 'dark' && work_sans.className,
         variant === 'blue' && styles.buttonBlue,
         variant === 'blue' && inter.className,
         variant === 'blue-dark' && styles.buttonBlueDark,
-        variant === 'blue-dark' && work_sans.className
+        variant === 'blue-dark' && work_sans.className,
+        variant === 'blue-light' && styles.buttonBlueLight,
+        variant === 'blue-light' && work_sans.className
       )}
     >
       {title}
