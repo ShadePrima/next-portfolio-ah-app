@@ -1,6 +1,7 @@
 import cl from 'clsx'
-import styles from './ListOfProjects.module.scss'
 import ProjectItem from '../project-item/ProjectItem'
+
+import styles from './ListOfProjects.module.scss'
 
 const ListOfProjects = () => {
   return (

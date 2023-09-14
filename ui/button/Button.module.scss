@@ -1,6 +1,7 @@
 @import '../../styles/variable.module.scss';
 
 .main {
+  width: 100%;
   @include flexCenter;
 
   transition: transform 0.3s ease;

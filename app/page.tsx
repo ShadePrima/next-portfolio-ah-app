@@ -14,7 +14,7 @@ export default function Home() {
       <Header />
       <Expertise />
       <Process />
-      {/* <Projects /> */}
+      <Projects />
       {/* <Talk /> */}
       {/* <Footer /> */}
     </main>
