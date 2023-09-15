@@ -11,11 +11,10 @@
 
   @include flexCenter;
 
-  color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.6);
   font-feature-settings: 'liga' off;
-
   font-size: 16px;
   font-style: normal;
-  font-weight: 600;
-  line-height: 100%;
+  font-weight: 400;
+  line-height: 125%; /* 20px */
 }

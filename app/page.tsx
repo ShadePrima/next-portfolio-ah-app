@@ -16,7 +16,7 @@ export default function Home() {
       <Process />
       <Projects />
       <Talk />
-      {/* <Footer /> */}
+      <Footer />
     </main>
   )
 }
