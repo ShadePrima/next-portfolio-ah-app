@@ -1,3 +1,8 @@
+import cl from 'clsx'
+
+import { Work_Sans } from 'next/font/google'
+const work_sans = Work_Sans({ subsets: ['latin'] })
+
 import styles from './ProjectItem.module.scss'
 
 type ProjectItemProps = {
@@ -11,11 +16,15 @@ const ProjectItem = ({ variant }: ProjectItemProps) => {
 
       {variant === 'horizontal' && <div className={styles.horizontalImage} />}
 
-      {variant === 'normal' && <div className={styles.normalImage} />}
+      {variant === 'square-1' && <div className={styles.squareImage1} />}
+
+      {variant === 'square-2' && <div className={styles.squareImage2} />}
 
       <div className={styles.content}>
-        <h2 className={styles.title}>AI Lab Granada</h2>
-        <p className={styles.text}>Web Development</p>
+        <h2 className={cl(styles.title, work_sans.className)}>
+          AI Lab Granada
+        </h2>
+        <p className={cl(styles.text, work_sans.className)}>Web Development</p>
       </div>
     </div>
   )

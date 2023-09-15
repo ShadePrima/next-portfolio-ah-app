@@ -7,8 +7,8 @@
   align-self: stretch;
 
   border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  background: rgba(0, 0, 0, 0.15);
+  border: 0.5px solid #ff9898;
+  background: #0e0922;
   backdrop-filter: blur(32px);
 
   //   @media (max-width: 1068px) {
@@ -31,8 +31,8 @@
 }
 
 .verticalImage {
-  width: 336px;
-  height: 538px;
+  width: 333px;
+  height: 547px;
 
   border-radius: 8px 8px 0 0;
 
@@ -53,8 +53,8 @@
 }
 
 .horizontalImage {
-  width: 682px;
-  height: 206px;
+  width: 687px;
+  height: 211px;
 
   border-radius: 8px 8px 0 0;
   background-image: url('/images/project-horizontal.png');
@@ -72,24 +72,34 @@
   }
 }
 
-.normalImage {
-  width: 333px;
-  height: 206px;
+.squareImage1 {
+  width: 336px;
+  height: 211px;
 
   border-radius: 8px 8px 0 0;
-  background-image: url('/images/project-normal.png');
+  background-image: url('/images/project-square-1.png');
+}
+
+.squareImage2 {
+  width: 336px;
+  height: 211px;
+
+  border-radius: 8px 8px 0 0;
+  background-image: url('/images/project-square-2.png');
 }
 
 .title {
-  color: $blue-color;
+  color: $white-color;
   font-size: 16px;
-  font-weight: 400;
-  line-height: normal;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 16px */
 }
 
 .text {
-  color: $white-color;
-  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 175%; /* 24.5px */
 }

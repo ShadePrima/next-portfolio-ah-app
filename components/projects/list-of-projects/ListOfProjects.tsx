@@ -14,10 +14,10 @@ const ListOfProjects = () => {
           <ProjectItem variant='horizontal' />
         </div>
         <div className={styles.item2}>
-          <ProjectItem variant='normal' />
+          <ProjectItem variant='square-1' />
         </div>
         <div className={styles.item3}>
-          <ProjectItem variant='normal' />
+          <ProjectItem variant='square-2' />
         </div>
       </div>
     </div>
