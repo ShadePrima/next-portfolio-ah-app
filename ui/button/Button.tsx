@@ -23,7 +23,6 @@ type ButtonProps = {
  */
 
 const Button = ({ id, title, variant, type }: ButtonProps) => {
-  console.log(id, 'button id')
   return (
     <button
       type={type}

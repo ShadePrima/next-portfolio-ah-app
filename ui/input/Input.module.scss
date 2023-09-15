@@ -1,8 +1,10 @@
 @import '../../styles/variable.module.scss';
 
 .main {
-  width: 100%;
+  max-width: 358px;
   min-height: 40px;
+
+  padding: 12px;
   margin-bottom: 12px;
 
   display: flex;

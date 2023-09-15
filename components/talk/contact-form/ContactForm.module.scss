@@ -1,12 +1,48 @@
 @import '../../../styles/variable.module.scss';
 
 .main {
-  width: 422px;
-  min-height: 376px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 56px;
+}
+
+.form {
+  max-width: 422px;
+  min-height: 392px;
   padding: 32px;
 
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.15);
   background: rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(32px);
+}
+
+.textArea {
+  max-width: 358px;
+  min-height: 96px;
+  padding: 12px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 12px;
+
+  textarea {
+    width: 100%;
+    min-height: 96px;
+    padding: 3px;
+
+    color: rgba(255, 255, 255, 0.75);
+    border: none;
+    outline: none;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
 }
