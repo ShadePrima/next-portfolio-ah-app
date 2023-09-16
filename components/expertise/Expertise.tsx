@@ -10,7 +10,7 @@ import styles from './Expertise.module.scss'
 
 const Expertise = () => {
   return (
-    <div className={styles.main}>
+    <div id='expertise' className={styles.main}>
       <div className={cl(styles.content, 'container')}>
         <div className={styles.titleContainer}>
           <p

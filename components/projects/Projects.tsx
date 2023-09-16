@@ -13,7 +13,7 @@ import styles from './Projects.module.scss'
 
 const Projects = () => {
   return (
-    <div className={styles.main}>
+    <div id='project' className={styles.main}>
       <div className={cl(styles.content, 'container')}>
         <div className={styles.leftBlock}>
           <p

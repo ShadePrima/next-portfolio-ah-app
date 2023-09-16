@@ -9,7 +9,7 @@ import styles from './Talk.module.scss'
 
 const Talk = () => {
   return (
-    <div className={styles.main}>
+    <div id='talk' className={styles.main}>
       <h1
         className={cl(
           styles.title,

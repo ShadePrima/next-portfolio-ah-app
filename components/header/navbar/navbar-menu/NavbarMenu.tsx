@@ -6,6 +6,7 @@ import cl from 'clsx'
 import { Work_Sans } from 'next/font/google'
 const workSans = Work_Sans({ subsets: ['latin'] })
 
+import Link from 'next/link'
 import styles from './NavbarMenu.module.scss'
 
 const NavbarMenu = () => {
@@ -33,7 +34,7 @@ const NavbarMenu = () => {
             selected === nav.id ? styles.active : ''
           )}
         >
-          {nav.text}
+          <Link href={nav.link}>{nav.text}</Link>
         </li>
       ))}
     </ul>
@@ -43,8 +44,8 @@ const NavbarMenu = () => {
 export default NavbarMenu
 
 const navList = [
-  { id: 1, text: 'Home' },
-  { id: 2, text: 'Expertise' },
-  { id: 3, text: 'Portfolio' },
-  { id: 4, text: 'Contact Us' },
+  { id: 1, text: 'Home', link: '/' },
+  { id: 2, text: 'Expertise', link: '/#expertise' },
+  { id: 3, text: 'Portfolio', link: '/#project' },
+  { id: 4, text: 'Contact Us', link: '/#talk' },
 ]
