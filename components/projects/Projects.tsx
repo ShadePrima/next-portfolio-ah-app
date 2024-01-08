@@ -1,14 +1,10 @@
 import cl from 'clsx'
 import Image from 'next/image'
 import { Button } from '@/ui'
-
-import { Work_Sans, Darker_Grotesque, Inter } from 'next/font/google'
+import { Work_Sans, Inter } from 'next/font/google'
 const work_sans = Work_Sans({ subsets: ['latin'] })
-const darker_grotesque = Darker_Grotesque({ subsets: ['latin'] })
 const inter = Inter({ subsets: ['latin'] })
-
 import ListOfProjects from './list-of-projects/ListOfProjects'
-
 import styles from './Projects.module.scss'
 
 const Projects = () => {
@@ -25,7 +21,7 @@ const Projects = () => {
           >
             Portfolio
           </p>
-          <h1 className={cl(darker_grotesque.className, 'title-middle mt-8')}>
+          <h1 className={cl('title-middle mt-8')}>
             Featured <br /> Project
           </h1>
           <p className={cl(work_sans.className, 'text-middle mt-24')}>

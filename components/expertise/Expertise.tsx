@@ -1,11 +1,8 @@
 import cl from 'clsx'
 
-import { Work_Sans, Darker_Grotesque } from 'next/font/google'
+import { Work_Sans } from 'next/font/google'
 const work_sans = Work_Sans({ subsets: ['latin'] })
-const darker_grotesque = Darker_Grotesque({ subsets: ['latin'] })
-
 import ExpertCard from './expertCard/ExpertCard'
-
 import styles from './Expertise.module.scss'
 
 const Expertise = () => {
@@ -22,21 +19,17 @@ const Expertise = () => {
           >
             Features
           </p>
-          <h1
-            className={cl(
-              styles.title,
-              darker_grotesque.className,
-              'title-middle text-center mt-8'
-            )}
-          >
+          <h1 className={cl(styles.title, 'title-middle text-center mt-8')}>
             Our expertise
           </h1>
 
           <p
             className={cl(work_sans.className, 'text-middle text-center mt-24')}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec enim
-            vel ac donec et tincidunt in et.
+            Step into the dynamic world of Pixel Puncher, where innovation meets
+            pixel perfection. As a leading digital agency, we specialize in
+            bringing your ideas to life with a unique blend of creativity and
+            cutting-edge technology
           </p>
         </div>
 

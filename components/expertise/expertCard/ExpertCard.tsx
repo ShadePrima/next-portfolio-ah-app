@@ -4,8 +4,7 @@ import React from 'react'
 import cl from 'clsx'
 import Image from 'next/image'
 
-import { Darker_Grotesque, Work_Sans } from 'next/font/google'
-const darker_grotesque = Darker_Grotesque({ subsets: ['latin'] })
+import { Work_Sans } from 'next/font/google'
 const work_sans = Work_Sans({ subsets: ['latin'] })
 
 import { Button } from '@/ui'
@@ -45,9 +44,7 @@ const ExpertCard = ({ id, title, text }: ExpertCardProps) => {
           alt='expert-icon'
         />
 
-        <h3 className={cl(styles.title, darker_grotesque.className)}>
-          {title}
-        </h3>
+        <h3 className={cl(styles.title)}>{title}</h3>
         <p className={cl(styles.text, work_sans.className)}>{text}</p>
       </div>
       <div onClick={handleButtonClick}>

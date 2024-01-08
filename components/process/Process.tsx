@@ -1,12 +1,8 @@
 import cl from 'clsx'
 import { Button } from '@/ui'
 import ProcessCard from './processCard/ProcessCard'
-
-import { Darker_Grotesque, Work_Sans } from 'next/font/google'
-
+import { Work_Sans } from 'next/font/google'
 const work_sans = Work_Sans({ subsets: ['latin'] })
-const darker_grotesque = Darker_Grotesque({ subsets: ['latin'] })
-
 import styles from './Process.module.scss'
 
 const Process = () => {
@@ -34,15 +30,7 @@ const Process = () => {
           >
             How it Works
           </p>
-          <h1
-            className={cl(
-              styles.title,
-              darker_grotesque.className,
-              'title-middle mt-8'
-            )}
-          >
-            Our process
-          </h1>
+          <h1 className={cl(styles.title, 'title-middle mt-8')}>Our process</h1>
           <p
             className={cl(
               styles.text,
