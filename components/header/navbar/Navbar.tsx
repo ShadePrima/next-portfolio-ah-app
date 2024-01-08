@@ -1,11 +1,8 @@
 import cl from 'clsx'
 import Image from 'next/image'
-
 import { Work_Sans } from 'next/font/google'
 const workSans = Work_Sans({ subsets: ['latin'] })
-
 import NavbarMenu from './navbar-menu/NavbarMenu'
-
 import styles from './Navbar.module.scss'
 
 const Navbar = () => {
