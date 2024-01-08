@@ -14,6 +14,7 @@ type ButtonProps = {
   title: string
   variant: string
   type?: 'button' | 'submit' | 'reset' | undefined
+  onClick: () => void
 }
 
 /**
@@ -22,11 +23,12 @@ type ButtonProps = {
  *
  */
 
-const Button = ({ id, title, variant, type }: ButtonProps) => {
+const Button = ({ id, title, variant, type, onClick }: ButtonProps) => {
   return (
     <button
       type={type}
       value={id}
+      onClick={onClick}
       className={cl(
         styles.main,
         variant === 'white' && styles.buttonWhite,

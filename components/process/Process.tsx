@@ -38,11 +38,9 @@ const Process = () => {
               'text-middle mt-24'
             )}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec enim
-            vel ac donec et tincidunt in et. Sed erat mattis lacus nunc. Enim
-            nam malesuada ipsum enim. Ut velit massa a consequat commodo. Leo at
-            sed nunc mattis tincidunt mauris interdum. Sem ante nunc, nisi
-            adipiscing viverra nunc.
+            At Pixel Puncher, our process is a carefully curated journey that
+            transforms your vision into a digital masterpiece. Here&apos;s a
+            glimpse into how we make the magic happen.
           </p>
           <div className={styles.button}>
             <Button title='Learn more' variant='blue-dark' />
@@ -59,25 +57,25 @@ const cardList = [
   {
     id: 1,
     icon: '/icons/process-one.svg',
-    title: 'Hello',
-    text: 'Lorem ipsum dolor sit amet, consect-etur adipiscing elit. Turpis vel sit nisi, feugiat.',
+    title: 'Acquaintance',
+    text: 'Get to know your goals and vision.',
   },
   {
     id: 2,
     icon: '/icons/process-two.svg',
     title: 'Discovery',
-    text: 'Lorem ipsum dolor sit amet, consect-etur adipiscing elit. Turpis vel sit nisi, feugiat.',
+    text: 'Craft a strategic blueprint tailored to your objectives.',
   },
   {
     id: 3,
     icon: '/icons/process-three.svg',
-    title: 'Work',
-    text: 'Lorem ipsum dolor sit amet, consect-etur adipiscing elit. Turpis vel sit nisi, feugiat.',
+    title: 'Process',
+    text: 'Bring your vision to life through creative design and precise development.',
   },
   {
     id: 4,
     icon: '/icons/process-four.svg',
     title: 'Delivery',
-    text: 'Lorem ipsum dolor sit amet, consect-etur adipiscing elit. Turpis vel sit nisi, feugiat.',
+    text: 'Launch and support your project for sustained success.',
   },
 ]

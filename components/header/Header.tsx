@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import cl from 'clsx'
 import Navbar from './navbar/Navbar'
-import { Button } from '@/ui'
 import { Work_Sans } from 'next/font/google'
 const workSans = Work_Sans({ subsets: ['latin'] })
+import HeaderButton from './header_button'
 import styles from './Header.module.scss'
 
 const Header = () => {
@@ -23,7 +23,7 @@ const Header = () => {
             Crafting Digital Brilliance, One Pixel at a Time!
           </p>
           <div className={styles.button}>
-            <Button title='Get in Touch' variant='blue-dark' />
+            <HeaderButton />
           </div>
         </div>
         <Image
