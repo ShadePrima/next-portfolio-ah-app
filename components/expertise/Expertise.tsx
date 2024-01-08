@@ -54,16 +54,16 @@ const cardList = [
   {
     id: 1,
     title: 'Backend',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec enim vel ac donec et tincidunt in et. ',
+    text: "Behind every successful website is a powerful engine, and that's where our expertise shines. We harness top-notch technologies like Python, Django, and AWS to ensure your site runs smoothly. Think of us as the wizards behind the curtain, making sure the magic happens without a hitch.'",
   },
   {
     id: 2,
     title: 'Design',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec enim vel ac donec et tincidunt in et. ',
+    text: "Dive into world-class designs crafted with tools like Figma and Adobe's creative suite. We craft designs that resonate and inspire. Think of them as the paintbrushes and colors behind your website's masterpiece. With these innovative tools, your brand will shine in the digital realm.",
   },
   {
     id: 3,
     title: 'Frontend',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec enim vel ac donec et tincidunt in et. ',
+    text: 'Think of your website as a well-orchestrated symphony. We use tools like JavaScript, React, and TypeScript to make sure every note, or in this case, every click and interaction, is pitch-perfect. Trust in our expertise to ensure your website is as dynamic and responsive as your business deserves.',
   },
 ]
