@@ -3,12 +3,8 @@
 .main {
   min-height: 4440px;
 
-  background-image: url('/images/background-large.png');
+  background-image: url('/images/background-all-empty.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
-  @media (max-width: 1440px) {
-    background-image: url('/images/background-middle.png');
-  }
 }

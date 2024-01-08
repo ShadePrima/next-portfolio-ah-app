@@ -1,13 +1,12 @@
 import './globals.scss'
 import type { Metadata } from 'next'
-import { Inter, Darker_Grotesque, Manrope, Work_Sans } from 'next/font/google'
+import { Darker_Grotesque } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
 const darkerGrotesque = Darker_Grotesque({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Portfolio App',
-  description: 'LOS GURUS DE LA TECNOLOGIA',
+  title: 'PIXEL PUNCHER DIGITAL AGENCY',
+  description: 'Crafting Digital Brilliance, One Pixel at a Time!',
 }
 
 export default function RootLayout({

@@ -1,12 +1,9 @@
+import Image from 'next/image'
 import cl from 'clsx'
-
 import Navbar from './navbar/Navbar'
 import { Button } from '@/ui'
-
-import { Darker_Grotesque, Work_Sans } from 'next/font/google'
-const darkerGrotesque = Darker_Grotesque({ subsets: ['latin'] })
+import { Work_Sans } from 'next/font/google'
 const workSans = Work_Sans({ subsets: ['latin'] })
-
 import styles from './Header.module.scss'
 
 const Header = () => {
@@ -16,25 +13,26 @@ const Header = () => {
 
       <div className={cl(styles.content, 'container')}>
         <div className={styles.leftBlock}>
-          <h1
-            className={cl(
-              styles.title,
-              darkerGrotesque.className,
-              'title-large'
-            )}
-          >
-            THIS IS WHAT WE DO YEAH YEAH
+          <h1 className={cl(styles.title)}>
+            PIXEL <span className={styles.subtitle}>PUNCHER</span> DIGITAL
+            AGENCY
           </h1>
           <p
             className={cl(styles.text, workSans.className, 'text-middle mt-24')}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis vel
-            sit nisi, feugiat sociis.
+            Crafting Digital Brilliance, One Pixel at a Time!
           </p>
           <div className={styles.button}>
             <Button title='Get in Touch' variant='blue-dark' />
           </div>
         </div>
+        <Image
+          className={styles.header__image}
+          src={'/images/header-img_2.png'}
+          width={520}
+          height={520}
+          alt='logo'
+        />
       </div>
     </div>
   )
