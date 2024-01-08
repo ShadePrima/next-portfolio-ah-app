@@ -1,23 +1,21 @@
 import cl from 'clsx'
 import ProjectItem from '../project-item/ProjectItem'
-
 import styles from './ListOfProjects.module.scss'
+import { projectList } from '@/static/data/project_list'
 
 const ListOfProjects = () => {
   return (
     <div className={styles.main}>
-      <div className={cl(styles.grid, 'container')}>
-        <div className={styles.item0}>
-          <ProjectItem variant='vertical' />
-        </div>
-        <div className={styles.item1}>
-          <ProjectItem variant='horizontal' />
-        </div>
-        <div className={styles.item2}>
-          <ProjectItem variant='square-1' />
-        </div>
-        <div className={styles.item3}>
-          <ProjectItem variant='square-2' />
+      <div className={cl('container')}>
+        <div className={styles.content}>
+          {projectList.map(({ id, image, title, description }) => (
+            <ProjectItem
+              key={id}
+              image={image}
+              title={title}
+              description={description}
+            />
+          ))}
         </div>
       </div>
     </div>

@@ -1,30 +1,24 @@
 import cl from 'clsx'
-
 import { Work_Sans } from 'next/font/google'
 const work_sans = Work_Sans({ subsets: ['latin'] })
-
+import Image from 'next/image'
 import styles from './ProjectItem.module.scss'
 
 type ProjectItemProps = {
-  variant: string
+  id?: number
+  image: string
+  title: string
+  description: string
 }
 
-const ProjectItem = ({ variant }: ProjectItemProps) => {
+const ProjectItem = ({ image, title, description }: ProjectItemProps) => {
   return (
     <div className={styles.main}>
-      {variant === 'vertical' && <div className={styles.verticalImage} />}
-
-      {variant === 'horizontal' && <div className={styles.horizontalImage} />}
-
-      {variant === 'square-1' && <div className={styles.squareImage1} />}
-
-      {variant === 'square-2' && <div className={styles.squareImage2} />}
+      <Image src={image} width={334} height={211} alt='project' />
 
       <div className={styles.content}>
-        <h2 className={cl(styles.title, work_sans.className)}>
-          AI Lab Granada
-        </h2>
-        <p className={cl(styles.text, work_sans.className)}>Web Development</p>
+        <h2 className={cl(styles.title, work_sans.className)}>{title}</h2>
+        <p className={cl(styles.text, work_sans.className)}>{description}</p>
       </div>
     </div>
   )
