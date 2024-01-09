@@ -1,12 +1,9 @@
 'use client'
 
 import cl from 'clsx'
-
 import { Work_Sans } from 'next/font/google'
 const work_sans = Work_Sans({ subsets: ['latin'] })
-
 import Image from 'next/image'
-
 import styles from './Input.module.scss'
 
 type Props = {

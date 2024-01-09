@@ -13,18 +13,6 @@ const Talk = () => {
         Let’s talk
       </h1>
       <div className={cl(styles.content, 'container-small flex-between mt-48')}>
-        <div className={styles.leftBlock}>
-          <p className={cl(work_sans.className, 'title-small')}>Contact form</p>
-          <h2 className={cl('title-middle mt-8')}>Write to us</h2>
-          <p className={cl(work_sans.className, 'text-middle mt-20')}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec enim
-            vel ac donec et tincidunt in et. Sed erat mattis lacus nunc. Enim
-            nam malesuada ipsum enim. Ut velit massa a consequat commodo. Leo at
-            sed nunc mattis tincidunt mauris interdum. Sem ante nunc, nisi
-            adipiscing viverra nunc.
-          </p>
-        </div>
-
         <ContactForm />
       </div>
     </div>

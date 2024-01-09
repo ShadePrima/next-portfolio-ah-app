@@ -4,23 +4,8 @@
   margin-top: 210px;
 }
 
-.title {
-  margin-left: 320px;
-
-  @media (max-width: 918px) {
-    margin-left: 0;
-  }
-}
-
 .content {
-  gap: 76px;
-
-  @media (max-width: 894px) {
-    @include flexCenter;
-  }
-}
-
-.leftBlock {
-  max-width: 366px;
-  min-height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

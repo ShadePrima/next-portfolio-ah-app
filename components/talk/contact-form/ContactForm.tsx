@@ -2,14 +2,11 @@
 
 import React from 'react'
 import cl from 'clsx'
-
 import { Work_Sans } from 'next/font/google'
 const work_sans = Work_Sans({ subsets: ['latin'] })
-
 import { Button, Input } from '@/ui'
-
-import styles from './ContactForm.module.scss'
 import Image from 'next/image'
+import styles from './ContactForm.module.scss'
 
 type formProps = {
   name: string
@@ -23,8 +20,6 @@ const ContactForm = () => {
     email: '',
     message: '',
   })
-
-  console.log(form, 'form')
 
   const handleTextareaChange = (
     event: React.ChangeEvent<HTMLTextAreaElement>
@@ -41,8 +36,7 @@ const ContactForm = () => {
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target
-    console.log(name, 'name')
-    console.log(event.target, 'event.target')
+
     setForm((prevForm) => ({
       ...prevForm,
       [name]: value,
