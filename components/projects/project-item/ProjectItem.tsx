@@ -13,7 +13,7 @@ type ProjectItemProps = {
 
 const ProjectItem = ({ image, title, description }: ProjectItemProps) => {
   return (
-    <div className={styles.main}>
+    <div className={styles.card}>
       <Image src={image} width={334} height={211} alt='project' />
 
       <div className={styles.content}>
