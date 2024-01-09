@@ -14,7 +14,7 @@ type ButtonProps = {
   title: string
   variant: string
   type?: 'button' | 'submit' | 'reset' | undefined
-  onClick: () => void
+  onClick?: () => void
 }
 
 /**
