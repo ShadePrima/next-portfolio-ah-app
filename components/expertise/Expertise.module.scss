@@ -13,11 +13,10 @@
 
 .cardContainer {
   margin-top: 56px;
-  @include flexBetween;
+  @include flexCenter;
   gap: 12px;
 
   @media (max-width: 695px) {
     gap: 24px;
-    @include flexCenter;
   }
 }

@@ -1,9 +1,9 @@
 import cl from 'clsx'
-import { Button } from '@/ui'
 import ProcessCard from './processCard/ProcessCard'
 import { Work_Sans } from 'next/font/google'
 const work_sans = Work_Sans({ subsets: ['latin'] })
 import styles from './Process.module.scss'
+import OpenModal from './openModal'
 
 const Process = () => {
   return (
@@ -43,7 +43,7 @@ const Process = () => {
             glimpse into how we make the magic happen.
           </p>
           <div className={styles.button}>
-            <Button title='Learn more' variant='blue-dark' />
+            <OpenModal />
           </div>
         </div>
       </div>
