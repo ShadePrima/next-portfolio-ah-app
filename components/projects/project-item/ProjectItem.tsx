@@ -14,7 +14,13 @@ type ProjectItemProps = {
 const ProjectItem = ({ image, title, description }: ProjectItemProps) => {
   return (
     <div className={styles.card}>
-      <Image src={image} width={334} height={211} alt='project' />
+      <Image
+        className={styles.image}
+        src={image}
+        width={334}
+        height={211}
+        alt='project'
+      />
 
       <div className={styles.content}>
         <h2 className={cl(styles.title, work_sans.className)}>{title}</h2>
