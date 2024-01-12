@@ -2,15 +2,10 @@
 
 .modal__wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   gap: 24px;
-}
-
-.modal__title {
-  font-size: $title-size-sm;
-  font-weight: 700;
 }
 
 .modal__description {

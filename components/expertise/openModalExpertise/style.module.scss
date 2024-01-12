@@ -1,0 +1,20 @@
+.modal__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.modal__description {
+  padding-top: 18px;
+  max-width: 362px;
+  width: 100%;
+}
+
+@media (min-width: 660px) {
+  .modal__wrapper {
+    justify-content: space-between;
+    align-items: start;
+  }
+}

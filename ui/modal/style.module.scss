@@ -34,6 +34,11 @@
   transform: translateY(-2px);
 }
 
+.modal__title {
+  font-size: $title-size-sm;
+  font-weight: 700;
+}
+
 @media (min-width: 834px) {
   .overlay {
     padding: 100px;

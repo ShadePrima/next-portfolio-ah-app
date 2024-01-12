@@ -10,6 +10,7 @@ const work_sans = Work_Sans({ subsets: ['latin'] })
 import { Button } from '@/ui'
 
 import styles from './ExpertCard.module.scss'
+import OpenModalExpertise from '../openModalExpertise'
 
 type ExpertCardProps = {
   id: number
@@ -48,11 +49,11 @@ const ExpertCard = ({ id, title, text }: ExpertCardProps) => {
         <p className={cl(styles.text, work_sans.className)}>{text}</p>
       </div>
       <div onClick={handleButtonClick}>
-        <Button
+        <OpenModalExpertise
           id={id}
-          title='Learn more'
-          variant={selectedCard.buttonVariant}
-          type='button'
+          selectedCard={selectedCard}
+          title={title}
+          text={text}
         />
       </div>
     </div>

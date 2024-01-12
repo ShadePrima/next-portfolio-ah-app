@@ -4,11 +4,12 @@ import Image from 'next/image'
 import styles from './style.module.scss'
 
 type Props = {
+  title: string
   children: ReactNode
   onClick?: () => void
 }
 
-const ModalContent = ({ children, onClick }: Props) => {
+const ModalContent = ({ title, children, onClick }: Props) => {
   const handleOverlayClick = (event: React.MouseEvent<HTMLDivElement>) => {
     if (event.target === event.currentTarget) {
       if (onClick) {
@@ -28,6 +29,7 @@ const ModalContent = ({ children, onClick }: Props) => {
           height={24}
           alt='close'
         />
+        <h1 className={styles.modal__title}>{title}</h1>
         {children}
       </div>
     </div>

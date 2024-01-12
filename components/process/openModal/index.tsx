@@ -15,10 +15,12 @@ const OpenModal = () => {
         variant='blue-dark'
       />
       {showModal && (
-        <ModalContent onClick={() => setShowModal(!showModal)}>
+        <ModalContent
+          title='Our process'
+          onClick={() => setShowModal(!showModal)}
+        >
           <div className={styles.modal__wrapper}>
             <div>
-              <h1 className={styles.modal__title}>Our process</h1>
               <p className={styles.modal__description}>
                 At Pixel Punch we bring your digital dreams to life. From the
                 first sketch to the final click, we handle every step of web
